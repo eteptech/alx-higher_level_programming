@@ -2,7 +2,8 @@
 
 
 def readFile(filename):
-    with open(filename,encoding = 'utf-8') as f:
+
+    with open(filename, 'r', encoding = 'utf-8') as f:
         output =  f.read()
         print(output)
-
+readFile("README.md")
