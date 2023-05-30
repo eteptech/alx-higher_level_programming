@@ -1,9 +1,8 @@
 #!/usr/bin/python3
+"""Defines a text file-reading function."""
 
 
-def readFile(filename):
-
-    with open(filename, 'r', encoding = 'utf-8') as f:
-        output =  f.read()
-        print(output)
-readFile("README.md")
+def read_file(filename=""):
+    """Print the contents of a UTF8 text file to stdout."""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
